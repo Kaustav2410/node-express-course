@@ -1,3 +1,4 @@
+//First node app 
 const amount = 9
 
 if (amount < 10) {
