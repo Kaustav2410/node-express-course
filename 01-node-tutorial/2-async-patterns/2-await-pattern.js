@@ -5,13 +5,16 @@ const { readFile, writeFile } = require('fs').promises
 
 const start = async () => {
   try {
-    const first = await readFile('./content/first.txt', 'utf8')
-    const second = await readFile('./content/second.txt', 'utf8')
+    console.log("first");
+    const first = await readFile('D:/TheOdinProject/Nodejs/node-express-course/01-node-tutorial/content/first.txt', 'utf8')
+    const second = await readFile('D:/TheOdinProject/Nodejs/node-express-course/01-node-tutorial/content/second.txt', 'utf8')
+    console.log("reading done");
     await writeFile(
-      './content/result-mind-grenade.txt',
+      'D:/TheOdinProject/Nodejs/node-express-course/01-node-tutorial/content/result-mind-grenade.txt',
       `THIS IS AWESOME : ${first} ${second}`,
       { flag: 'a' }
     )
+    console.log("all done");
     console.log(first, second)
   } catch (error) {
     console.log(error)

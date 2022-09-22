@@ -1,6 +1,8 @@
 const http = require('http')
 
 const server = http.createServer((req, res) => {
+ //First parameter is the request incoming  
+ //Second parameter is the respond we send back
   //   if (req.url === '/') {
   //     res.end('Welcome to our home page')
   //   }
@@ -31,4 +33,4 @@ const server = http.createServer((req, res) => {
   }
 })
 
-server.listen(5000)
+server.listen(3000)

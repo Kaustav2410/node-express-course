@@ -1,3 +1,5 @@
+//setInterval is also an asynchornous function
+
 setInterval(() => {
   console.log('hello world')
 }, 2000)
